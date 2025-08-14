@@ -1,0 +1,134 @@
+
+{% block pagetitle %}
+
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+
+
+
+
+ <div class="banner-area">
+       
+        <h2>Plant Disease Detection</h2>  
+        <a href="/upload" class="btn">Leaf Disesase Prediction</a>
+    </div>
+	
+	<style>
+	body{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: absolute;
+    width: 1000px;
+    left: 100px;
+    top: 30px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    margin-right: 25px; 
+}
+	.banner-area h2 {
+    font-family: poppins;
+    font-size: 65px;
+    margin: 0 0 25px; 
+}
+.banner-area{
+    width: 100%;
+    height: 100vh;
+    background: url(https://t3.ftcdn.net/jpg/03/57/45/74/360_F_357457416_SgeNcoWsgPduGHKBMR7WXKSNTlc3UVlm.jpg); 
+    background-position: center;
+    -webkit-background-size:cover;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+    color: #fff;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 50px;
+    color: #fff;
+    border:3px solid #fff;
+    transition: 0.6s ease;
+    animation: animate 2s 1;
+    font-size: 15px;
+    font-weight: 900;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+@keyframes animate {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+h2{
+    animation: animate 2s 1;
+}
+	</style>
+	
+<!--center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">AI Engine</b></button>
+</a>
+</center-->
+<!--div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Apple</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.supermarketperimeter.com/ext/resources/0430-blueberries.png?t=1588260305&width=1080" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Blueberry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/health_benefits_of_cherries_slideshow/1800x1200_health_benefits_of_cherries_slideshow.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Cherry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2018/corn.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Corn</p></center>
+        </div>
+    </div>
+</div-->
+
+
+
+{% endblock body %}
