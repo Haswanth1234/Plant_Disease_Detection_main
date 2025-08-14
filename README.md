@@ -32,28 +32,21 @@ Static & Template Assets: Organized under staticFiles/uploads and templates.
 Repository Structure
 
 Plant_Disease_Detection_main/
-
-├── staticFiles/
-
-│   └── uploads/
-
-├── templates/
-
-├── test_images/
-
-├── CNN.py
-
-├── app.py
-
-├── Procfile
-
-├── disease_info.csv
-
-├── supplement_info.csv
-
-├── flask_get_post_upload_read_csv.py
-
-└── requirements.txt
+├── staticFiles/                # Static files such as uploaded images
+│   └── uploads/                 # Folder to store user-uploaded leaf images
+│
+├── templates/                   # HTML templates for Flask web app
+│
+├── test_images/                  # Sample leaf images for testing
+│
+├── CNN.py                        # CNN model architecture and training script
+├── app.py                        # Main Flask application
+├── Procfile                      # For deployment (e.g., Heroku)
+├── disease_info.csv              # Disease details and descriptions
+├── supplement_info.csv           # Additional data (remedies, supplements)
+├── flask_get_post_upload_read_csv.py  # Flask CSV upload/read example
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
 
 Getting Started
 
