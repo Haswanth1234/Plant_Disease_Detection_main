@@ -4,7 +4,7 @@ It comes with a Flask-based web app to upload images, run predictions, and view 
 
 📜 Contents
 
-#Overview
+Overview
 
 Target Audience
 
@@ -22,7 +22,7 @@ Contributing
 
 Code of Conduct
 
-##🔍 Overview
+🔍 Overview
 
 Upload any leaf image
 
@@ -32,7 +32,7 @@ Get remedies & details from dataset
 
 Easy web interface built with Flask
 
-##🎯 Target Audience
+🎯 Target Audience
 
 Farmers & Gardeners → Identify plant diseases early
 
@@ -40,7 +40,7 @@ Researchers → Use as a baseline for agriculture AI
 
 Developers → Integrate into mobile/web tools
 
-##🚀 Getting Started
+🚀 Getting Started
 1️⃣ Clone the Repository
 git clone https://github.com/Haswanth1234/Plant_Disease_Detection_main.git
 cd Plant_Disease_Detection_main
@@ -75,16 +75,27 @@ Output → Display disease name, description, remedies from CSV
 📂 Repository Structure
 Plant_Disease_Detection_main/
 ├── staticFiles/                     # Static assets (uploaded images)
+
 │   └── uploads/
+
 ├── templates/                       # HTML templates for Flask UI
+
 ├── test_images/                      # Sample images for testing
+
 ├── CNN.py                            # CNN model definition/training
+
 ├── app.py                            # Main Flask app
+
 ├── Procfile                          # Deployment config (Heroku)
+
 ├── disease_info.csv                  # Plant disease descriptions
+
 ├── supplement_info.csv               # Additional remedy data
+
 ├── flask_get_post_upload_read_csv.py # Example CSV upload/read script
+
 ├── requirements.txt                  # Python dependencies
+
 └── README.md                         # Documentation
 
 💻 Example Usage
