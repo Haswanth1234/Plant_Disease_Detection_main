@@ -30,17 +30,29 @@ Sample Images: Located under test_images for quick testing.
 Static & Template Assets: Organized under staticFiles/uploads and templates.
 
 Repository Structure
+
 Plant_Disease_Detection_main/
+
 ├── staticFiles/
+
 │   └── uploads/
+
 ├── templates/
+
 ├── test_images/
+
 ├── CNN.py
+
 ├── app.py
+
 ├── Procfile
+
 ├── disease_info.csv
+
 ├── supplement_info.csv
+
 ├── flask_get_post_upload_read_csv.py
+
 └── requirements.txt
 
 Getting Started
@@ -48,6 +60,7 @@ Getting Started
 Clone the repo
 
 git clone https://github.com/Haswanth1234/Plant_Disease_Detection_main.git
+
 cd Plant_Disease_Detection_main
 
 
