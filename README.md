@@ -1,8 +1,8 @@
-🌱 Plant Disease Detection – Alpha Release
+# 🌱 Plant Disease Detection – Alpha Release
 Plant Disease Detection is an open-source project using deep learning + computer vision to detect plant diseases from leaf images.
 It comes with a Flask-based web app to upload images, run predictions, and view remedies from a CSV database.
 
-📜 Contents
+# 📜 Contents
 
 Overview
 
@@ -12,9 +12,9 @@ Getting Started
 
 Supported Scenarios
 
-##How It Works
+# How It Works
 
-##Repository Structure
+# Repository Structure
 
 Example Usage
 
@@ -22,7 +22,7 @@ Contributing
 
 Code of Conduct
 
-🔍 Overview
+# 🔍 Overview
 
 Upload any leaf image
 
@@ -32,7 +32,7 @@ Get remedies & details from dataset
 
 Easy web interface built with Flask
 
-🎯 Target Audience
+#🎯 Target Audience
 
 Farmers & Gardeners → Identify plant diseases early
 
@@ -40,21 +40,22 @@ Researchers → Use as a baseline for agriculture AI
 
 Developers → Integrate into mobile/web tools
 
-🚀 Getting Started
-1️⃣ Clone the Repository
+#🚀 Getting Started
+
+# 1️⃣ Clone the Repository
 git clone https://github.com/Haswanth1234/Plant_Disease_Detection_main.git
 cd Plant_Disease_Detection_main
 
-2️⃣ Install Dependencies
+# 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Application
+# 3️⃣ Run the Application
 python app.py
 
-4️⃣ Open in Browser
+# 4️⃣ Open in Browser
 http://localhost:5000
 
-🌿 Supported Scenarios
+# 🌿 Supported Scenarios
 
 Detect diseases for multiple crops (from PlantVillage dataset or custom)
 
@@ -62,7 +63,7 @@ Classify healthy vs diseased leaves
 
 Provide treatment suggestions
 
-⚙ How It Works
+# ⚙ How It Works
 
 Upload Leaf Image → through Flask web UI
 
@@ -74,6 +75,7 @@ Output → Display disease name, description, remedies from CSV
 
 📂 Repository Structure
 Plant_Disease_Detection_main/
+
 ├── staticFiles/                     # Static assets (uploaded images)
 
 │   └── uploads/
@@ -106,7 +108,7 @@ python app.py
 # Open browser → upload image → click "Predict"
 
 
-Expected output:
+# Expected output:
 
 Prediction: Apple Scab  
 Remedy: Apply recommended fungicides and remove infected leaves.
