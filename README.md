@@ -1,119 +1,115 @@
-# Plant_Disease_Detection_main
-🌱 Plant Disease Detection  An AI-powered solution to identify plant diseases from leaf images using deep learning and computer vision. This project aims to assist farmers, gardeners, and agricultural researchers in detecting plant health issues early, reducing crop losses, and improving productivity.
+🌱 Plant Disease Detection – Alpha Release
+Plant Disease Detection is an open-source project using deep learning + computer vision to detect plant diseases from leaf images.
+It comes with a Flask-based web app to upload images, run predictions, and view remedies from a CSV database.
 
-Plant Disease Detection
+📜 Contents
 
-An AI-powered application that identifies plant diseases from leaf images using deep learning and computer vision. Designed to help farmers, gardeners, and agricultural researchers detect plant health issues early—reducing crop losses and improving yield.
+##Overview
 
-Project Overview
-
-Purpose: Upload leaf images, then receive predictions on plant disease status using a trained convolutional neural network (CNN).
-
-Use Case: Early detection helps in timely treatment and prevention, aiding efficient agricultural practices.
-
-Features
-
-User Interface: Built using Flask; users can upload images and view results seamlessly.
-
-CNN Model: Architecture implemented in CNN.py for disease classification.
-
-Backend & Deployment: Includes Procfile for deployment, e.g., on Heroku.
-
-Supplementary Data:
-
-disease_info.csv – disease descriptions.
-
-supplement_info.csv – extended information (e.g., remedies or treatment suggestions).
-
-Sample Images: Located under test_images for quick testing.
-
-Static & Template Assets: Organized under staticFiles/uploads and templates.
-
-Repository Structure
-
-Plant_Disease_Detection_main/
-├── staticFiles/                # Static files such as uploaded images
-
-│   └── uploads/                 # Folder to store user-uploaded leaf images
-
-│
-
-├── templates/                   # HTML templates for Flask web app
-
-│
-
-├── test_images/                  # Sample leaf images for testing
-
-│
-
-├── CNN.py                        # CNN model architecture and training script
-
-├── app.py                        # Main Flask application
-
-├── Procfile                      # For deployment (e.g., Heroku)
-
-├── disease_info.csv              # Disease details and descriptions
-
-├── supplement_info.csv           # Additional data (remedies, supplements)
-
-├── flask_get_post_upload_read_csv.py  # Flask CSV upload/read example
-
-├── requirements.txt              # Python dependencies
-
-└── README.md                     # Project documentation
+Target Audience
 
 Getting Started
 
-Clone the repo
+Supported Scenarios
 
-git clone https://github.com/Haswanth1234/Plant_Disease_Detection_main.git
+##How It Works
 
-cd Plant_Disease_Detection_main
+##Repository Structure
 
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Run the app
-
-python app.py
-
-
-Access the web interface
-Open your browser at http://localhost:5000, upload a leaf image, and get the prediction.
-
-How It Works
-
-Image Upload: Users upload a leaf image via the web interface.
-
-Preprocessing & Prediction: The image is processed and passed through the CNN (CNN.py), generating a disease prediction.
-
-Result Display: The UI shows the predicted disease along with helpful details from the CSV files.
-
-Dataset & Model (Optional)
-
-If the model was trained using public datasets like PlantVillage, you can include details about training methodology and datasets here. If using a custom dataset, explain that instead.
+Example Usage
 
 Contributing
 
-Contributions are welcome! Feel free to:
+Code of Conduct
 
-Improve model accuracy.
+##🔍 Overview
 
-Add more plant species.
+Upload any leaf image
 
-Make the UI more responsive.
+Detect disease type using CNN model
 
-Optimize deployment – suggest platforms like Heroku, Docker, or AWS.
+Get remedies & details from dataset
 
-Please open an issue for major enhancements before submitting a pull request.
+Easy web interface built with Flask
 
-License
+##🎯 Target Audience
 
-Include your project's license information here (e.g. MIT, Apache-2.0, etc.).
+Farmers & Gardeners → Identify plant diseases early
 
-Short Description (One-Liner)
+Researchers → Use as a baseline for agriculture AI
 
-Plant Disease Detection: Deep learning-powered app for detecting plant diseases from leaf images—helping you save crops before it's too late!
+Developers → Integrate into mobile/web tools
+
+##🚀 Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/Haswanth1234/Plant_Disease_Detection_main.git
+cd Plant_Disease_Detection_main
+
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the Application
+python app.py
+
+4️⃣ Open in Browser
+http://localhost:5000
+
+🌿 Supported Scenarios
+
+Detect diseases for multiple crops (from PlantVillage dataset or custom)
+
+Classify healthy vs diseased leaves
+
+Provide treatment suggestions
+
+⚙ How It Works
+
+Upload Leaf Image → through Flask web UI
+
+Preprocessing → resize, normalize, prepare for CNN input
+
+Prediction → CNN model (CNN.py) runs classification
+
+Output → Display disease name, description, remedies from CSV
+
+📂 Repository Structure
+Plant_Disease_Detection_main/
+├── staticFiles/                     # Static assets (uploaded images)
+│   └── uploads/
+├── templates/                       # HTML templates for Flask UI
+├── test_images/                      # Sample images for testing
+├── CNN.py                            # CNN model definition/training
+├── app.py                            # Main Flask app
+├── Procfile                          # Deployment config (Heroku)
+├── disease_info.csv                  # Plant disease descriptions
+├── supplement_info.csv               # Additional remedy data
+├── flask_get_post_upload_read_csv.py # Example CSV upload/read script
+├── requirements.txt                  # Python dependencies
+└── README.md                         # Documentation
+
+💻 Example Usage
+Upload a Test Image
+# Place your image in test_images/ folder
+# Run the app
+python app.py
+# Open browser → upload image → click "Predict"
+
+
+Expected output:
+
+Prediction: Apple Scab  
+Remedy: Apply recommended fungicides and remove infected leaves.
+
+🤝 Contributing
+
+We welcome contributions:
+
+# Fork the repository
+# Create a new branch
+git checkout -b feature-name
+
+# Make changes
+git commit -m "Added new feature"
+
+# Push changes
+git push origin feature-name
